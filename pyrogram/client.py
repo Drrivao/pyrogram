@@ -340,7 +340,7 @@ class Client(Methods):
             try:
                 if not self.phone_number:
                     while True:
-                        value = await ainput("Enter phone number or bot token: ")
+                        value = await ainput("Enter phone number: ")
 
                         if not value:
                             continue

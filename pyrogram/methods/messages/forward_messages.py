@@ -87,7 +87,8 @@ class ForwardMessages:
                 silent=disable_notification or None,
                 random_id=[self.rnd_id() for _ in message_ids],
                 schedule_date=utils.datetime_to_timestamp(schedule_date),
-                noforwards=protect_content
+                noforwards=protect_content,
+                drop_author=True
             )
         )
 
